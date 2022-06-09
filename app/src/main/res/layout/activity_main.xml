@@ -42,7 +42,8 @@
                 android:id="@+id/btnLaunchHistory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/history" />
+                android:text="@string/history"
+                android:onClick="launchHistory"/>
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
