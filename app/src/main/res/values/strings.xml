@@ -2,4 +2,13 @@
     <string name="app_name" translatable="false">EFREI Fight</string>
     <string name="history">History</string>
     <string name="launch">Launch a match</string>
+    <string name="ParamLogo">logo of the settings</string>
+    <string name="enter_name" >Enter the name:</string>
+    <string name="player_1" >Fighter 1 :</string>
+    <string name="player_2" >Fighter 2 :</string>
+    <string name="texttypefight">Fight type :</string>
+    <string name="ParamText" >Parameter</string>
+    <string name="enter_type_fight">Enter de type of battle</string>
+    <string name="validsetting" >Start fight</string>
+
 </resources>
