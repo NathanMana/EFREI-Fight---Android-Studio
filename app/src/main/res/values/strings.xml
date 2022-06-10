@@ -10,5 +10,7 @@
     <string name="ParamText" >Parameter</string>
     <string name="enter_type_fight">Enter de type of battle</string>
     <string name="validsetting" >Start fight</string>
-
+    <string name="back">Back</string>
+    <string name="menu">Menu</string>
+    <string name="spectators">1500 spectators</string>
 </resources>
