@@ -2,12 +2,18 @@
 <resources>
     <string name="history">Historique</string>
     <string name="statistics">Statistiques</string>
-
     <string name="launch">Lancer un match</string>
+    <string name="ParamLogo">logo of the settings</string>
+    <string name="enter_name" >Entrer le nom:</string>
+    <string name="player_1" >Combattant 1 :</string>
+    <string name="player_2" >Combattant 2 :</string>
+    <string name="texttypefight">Type de combat :</string>
+    <string name="ParamText" >Paramètre</string>
+    <string name="enter_type_fight">Entrer le type de combat</string>
+    <string name="validsetting" >Début combat</string>
     <string name="back">Retour</string>
     <string name="menu">Menu</string>
     <string name="spectators">1500 spectateurs</string>
     <string name="duration">Durée</string>
     <string name="round_numbers">Nombre de round</string>
-
 </resources>
