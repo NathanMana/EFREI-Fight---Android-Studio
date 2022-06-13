@@ -73,13 +73,13 @@ public class FighterService {
             statement.setInt(1, fightId);
 
             ResultSet resultSet = statement.executeQuery();
-            if (!resultSet.next()) return null;
 
             List listFighters = new LinkedList<Fighter>();
 
             while(resultSet.next()) {
 
                 int fighterId = resultSet.getInt("fighter_id");
+
                 List listStats = PlayerRoundStatisticsService.GetListPlayerRoundStatistics(fighterId);
 
                 listFighters.add(new Fighter(

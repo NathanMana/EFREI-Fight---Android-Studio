@@ -8,6 +8,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.time.LocalDateTime;
+import java.util.LinkedList;
 import java.util.List;
 
 import fr.android.project_vyas_manaranche.models.Fight;
@@ -62,9 +63,7 @@ public class FightService {
             List listPlayers = FighterService.GetListFighters(fightId);
             List listRounds = RoundService.GetListRounds(fightId);
 
-            dbService.connection.close();
-
-            return new Fight(
+            Fight fight = new Fight(
                     fightId,
                     resultSet.getDate("date"),
                     resultSet.getInt("duration"),
@@ -72,12 +71,58 @@ public class FightService {
                     resultSet.getString("city"),
                     listPlayers,
                     listRounds);
+            dbService.connection.close();
+
+            return fight;
         }
         catch (Exception e) {
             System.out.println("Erreur  : "  + e);
         }
 
         return null;
+    }
+
+    public static List<Fight> GetListFights() {
+
+        List listFights = new LinkedList<Fight>();
+
+        try {
+
+            DatabaseService dbService = new DatabaseService();
+            PreparedStatement statement = dbService.connection.prepareStatement("SELECT * FROM fight");
+
+            ResultSet resultSet = statement.executeQuery();
+
+            while (resultSet.next()) {
+
+                int fightId =  resultSet.getInt("fight_id");
+
+                List listPlayers = FighterService.GetListFighters(fightId);
+
+                List listRounds = RoundService.GetListRounds(fightId);
+
+                listFights.add(
+
+                        new Fight(
+                                fightId,
+                                resultSet.getDate("date"),
+                                resultSet.getInt("duration"),
+                                resultSet.getString("streetname"),
+                                resultSet.getString("city"),
+                                listPlayers,
+                                listRounds)
+                );
+            }
+
+            dbService.connection.close();
+
+            return listFights;
+        }
+        catch (Exception e) {
+            System.out.println("Erreur  : "  + e);
+        }
+
+        return listFights;
     }
 
 }

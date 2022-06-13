@@ -6,12 +6,20 @@ public class PlayerRoundStatistics {
     private int nbOvercute;
     private int nbDirect;
     private int nbKick;
+    private int round;
 
     public PlayerRoundStatistics(int nbHook, int nbOvercute, int nbDirect, int nbKick) {
         this.nbHook = nbHook;
         this.nbOvercute = nbOvercute;
         this.nbDirect = nbDirect;
         this.nbKick = nbKick;
+    }
+    public PlayerRoundStatistics(int nbHook, int nbOvercute, int nbDirect, int nbKick, int round) {
+        this.nbHook = nbHook;
+        this.nbOvercute = nbOvercute;
+        this.nbDirect = nbDirect;
+        this.nbKick = nbKick;
+        this.round = round;
     }
 
     public int getNbHook() {
@@ -40,6 +48,14 @@ public class PlayerRoundStatistics {
 
     public int getNbKick() {
         return nbKick;
+    }
+
+    public int getRound() {
+        return round;
+    }
+
+    public void setRound(int round) {
+        this.round = round;
     }
 
     public void setNbKick(int nbKick) {

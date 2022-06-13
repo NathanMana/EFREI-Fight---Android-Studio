@@ -2,11 +2,12 @@ package fr.android.project_vyas_manaranche.models;
 
 import java.time.LocalDateTime;
 import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Fight {
 
-    private long fightId;
+    private int fightId;
     private Date date;
     private int duration;
     private String streetName;
@@ -15,7 +16,7 @@ public class Fight {
     private List<Fighter> listFighter;
     private List<Round> listRounds;
 
-    public Fight(long fightId,
+    public Fight(int fightId,
                  Date date,
                  int duration,
                  String streetName,
@@ -40,7 +41,6 @@ public class Fight {
         this.listFighter = listFighters;
     }
 
-
     public List<Fighter> getListFighter() {
         return listFighter;
     }
@@ -57,11 +57,11 @@ public class Fight {
         this.listRounds = listRounds;
     }
 
-    public long getFightId() {
+    public int getFightId() {
         return fightId;
     }
 
-    public void setFightId(long fightId) {
+    public void setFightId(int fightId) {
         this.fightId = fightId;
     }
 

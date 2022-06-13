@@ -16,26 +16,27 @@ public class PlayerRoundStatisticsService {
 
             DatabaseService dbService = new DatabaseService();
             PreparedStatement statement = dbService.connection.prepareStatement(
-                    "SELECT * FROM fighter WHERE fighter_id = ?");
+                    "SELECT * FROM player_round_statistics WHERE fighter_id = ?");
             statement.setInt(1, refFighter);
 
             ResultSet resultSet = statement.executeQuery();
-            if (!resultSet.next()) return null;
 
             List<PlayerRoundStatistics> listStatistics = new LinkedList<PlayerRoundStatistics>();
 
             while(resultSet.next()) {
                 listStatistics.add(
                         new PlayerRoundStatistics(
-                                resultSet.getInt("hook"),
-                                resultSet.getInt("overcute"),
-                                resultSet.getInt("direct"),
-                                resultSet.getInt("kick")
+                                resultSet.getInt("nbHook"),
+                                resultSet.getInt("nbOvercute"),
+                                resultSet.getInt("nbDirect"),
+                                resultSet.getInt("nbKick"),
+                                resultSet.getInt("round")
                         )
                 );
             }
 
             dbService.connection.close();
+
             return listStatistics;
         }
         catch (Exception e) {

@@ -57,6 +57,9 @@ CREATE TABLE `efrei_fight`.`player_round_statistics` (
     REFERENCES `efrei_fight`.`fighter` (`fighter_id`)
     ON DELETE CASCADE
     ON UPDATE NO ACTION);
+
+ALTER TABLE `efrei_fight`.`player_round_statistics` 
+ADD COLUMN `round` INT NOT NULL AFTER `fighter_id`;
     
 ALTER TABLE `efrei_fight`.`player_round_statistics` 
 CHANGE COLUMN `player_round_statistics_id` `player_round_statistics_id` INT(11) NOT NULL AUTO_INCREMENT ;
