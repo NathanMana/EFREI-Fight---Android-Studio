@@ -6,11 +6,19 @@
     <string name="enter_name" >Enter the name:</string>
     <string name="player_1" >Fighter 1 :</string>
     <string name="player_2" >Fighter 2 :</string>
-    <string name="texttypefight">Fight type :</string>
     <string name="ParamText" >Parameter</string>
-    <string name="enter_type_fight">Enter de type of battle</string>
     <string name="validsetting" >Start fight</string>
     <string name="back">Back</string>
     <string name="menu">Menu</string>
     <string name="spectators">1500 spectators</string>
+    <string name="get_location">Get Location</string>
+    <string name="actual_location">Actual Street location</string>
+    <string name="actual_location_Country">The Country</string>
+    <string name="enter_type_fight">Enter de type of battle</string>
+    <string name="FightType">Type of batlle</string>
+    <string-array name="FightType">
+        <item>Beginner</item>
+        <item>Pro</item>
+        <item>Amateur</item>
+    </string-array>
 </resources>
