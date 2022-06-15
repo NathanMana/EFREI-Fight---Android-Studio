@@ -4,7 +4,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.time.LocalDateTime;
+import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
+
+import fr.android.project_vyas_manaranche.models.Fight;
+import fr.android.project_vyas_manaranche.models.Fighter;
+import fr.android.project_vyas_manaranche.services.FightService;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
      */
     public void launchMatch(View view) {
 
-        Intent intent = new Intent(this, Settings.class);
-        startActivity(intent);
+        // Intent intent = new Intent(this, Settings.class);
+        // startActivity(intent);
     }
 
     /**
@@ -30,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void launchHistory(View view) {
 
-        Intent intent = new Intent(this, History.class);
+        Intent intent = new Intent(this, HistoryActivity.class);
         startActivity(intent);
     }
 }

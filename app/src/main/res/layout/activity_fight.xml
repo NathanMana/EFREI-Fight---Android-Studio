@@ -12,13 +12,15 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textViewPlayer1"
+            android:id="@+id/textViewFight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="30dp"
-            android:text="@string/player_1"
+            android:text="@string/FightType"
             android:textAlignment="center"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+
+            />
 
         <TextView
             android:id="@+id/textViewPlayer2"
@@ -30,16 +32,72 @@
             android:textSize="14sp"
 
             />
+
         <TextView
-            android:id="@+id/textViewFight"
+            android:id="@+id/HealtBar2"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Healtbarview2"
+            tools:layout_editor_absoluteY="239dp" />
+
+        <TextView
+            android:id="@+id/HealtBar1"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Healtbarview1" />
+
+        <TextView
+            android:id="@+id/textViewPlayer1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="30dp"
-            android:text="@string/FightType"
+            android:text="@string/player_1"
             android:textAlignment="center"
-            android:textSize="14sp"
+            android:textSize="14sp" />
 
-            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/KOP1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/KOJ1" />
+
+            <Button
+                android:id="@+id/KOP2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/KOJ2" />
+
+            <Button
+                android:id="@+id/UpperCJ1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/UpperCJ1" />
+
+            <Button
+                android:id="@+id/CPJ1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CPJ1" />
+
+            <Button
+                android:id="@+id/UpperCJ2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/UpperCJ2" />
+
+            <Button
+                android:id="@+id/CPJ2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CPJ2" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
 

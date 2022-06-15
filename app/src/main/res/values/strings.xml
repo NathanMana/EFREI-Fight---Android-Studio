@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">EFREI Fight</string>
     <string name="history">History</string>
+    <string name="statistics">Statistics</string>
     <string name="launch">Launch a match</string>
     <string name="ParamLogo">logo of the settings</string>
     <string name="enter_name" >Enter the name:</string>
@@ -21,4 +22,15 @@
         <item>Pro</item>
         <item>Amateur</item>
     </string-array>
+    <string name="duration">Duration</string>
+    <string name="round_numbers">Numbers of round</string>
+    <string name="texttypefight">Fight type</string>
+    <string name="Healtbarview1">100</string>
+    <string name="Healtbarview2">100</string>
+    <string name="KOJ1">Player 1 K.O</string>
+    <string name="KOJ2">Player 2 K.O</string>
+    <string name="CPJ1">Punch on player 1</string>
+    <string name="CPJ2">Punch on player 2</string>
+    <string name="UpperCJ1">Overcute on player 1</string>
+    <string name="UpperCJ2">Overcute on player 2</string>
 </resources>
