@@ -9,11 +9,29 @@
     <string name="player_2" >Combattant 2 :</string>
     <string name="texttypefight">Type de combat :</string>
     <string name="ParamText" >Paramètre</string>
-    <string name="enter_type_fight">Entrer le type de combat</string>
     <string name="validsetting" >Début combat</string>
     <string name="back">Retour</string>
     <string name="menu">Menu</string>
     <string name="spectators">1500 spectateurs</string>
     <string name="duration">Durée</string>
     <string name="round_numbers">Nombre de round</string>
+    <string name="get_location">La localisation</string>
+    <string name="actual_location">Adresse actuelle</string>
+    <string name="actual_location_Country">Le pays</string>
+    <string name="enter_type_fight">Entrer le type de combat</string>
+    <string name="FightType">Type de combat</string>
+    <string-array name="FightType">
+        <item>Débutant</item>
+        <item>Pro</item>
+        <item>Amateur</item>
+    </string-array>
+    <string name="Healtbarview1">100</string>
+    <string name="Healtbarview2">100</string>
+    <string name="KOJ1">K.O du Joueur 1</string>
+    <string name="KOJ2">K.O du Joueur 2</string>
+    <string name="CPJ1">Coup de poing sur Joueur 1</string>
+    <string name="CPJ2">Coup de poing sur Joueur 2</string>
+    <string name="UpperCJ1">Uppercute sur Joueur 1</string>
+    <string name="UpperCJ2">Uppercute sur Joueur 2</string>
+
 </resources>
