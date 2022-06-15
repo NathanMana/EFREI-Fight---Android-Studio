@@ -50,14 +50,7 @@
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/menu"
-                app:iconPadding="2dp" />
+                android:layout_weight="2" />
 
         </LinearLayout>
 
@@ -67,6 +60,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0"
             android:orientation="vertical" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

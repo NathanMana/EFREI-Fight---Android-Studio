@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.PopupMenu;
 import android.widget.RelativeLayout;
 import android.widget.Space;
 import android.widget.TextView;
@@ -146,7 +148,6 @@ public class HistoryActivity extends AppCompatActivity {
         return textView;
     }
 
-
     public void handleDisplayStatistics(Fight fight) {
 
             Intent intent = new Intent(this, StatisticsActivity.class);
@@ -158,4 +159,25 @@ public class HistoryActivity extends AppCompatActivity {
     public void handlerBack(View view) {
         finish();
     }
+
+    /*public void handlerMenu(View view) {
+        PopupMenu menu = new PopupMenu(this, view);
+        menu.getMenuInflater().inflate(R.menu.popup_menu, menu.getMenu());
+        menu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+
+            @Override
+            public boolean onMenuItemClick(MenuItem menuItem) {
+                if (menuItem.getItemId() == R.id.item_menu_1)
+                    System.out.println("Hello there");
+                else if (menuItem.getItemId() == R.id.item_menu_2)
+                    System.out.println("Hello there 2");
+                else if (menuItem.getItemId() == R.id.item_menu_3)
+                    System.out.println("Hello there 3");
+
+                return false;
+            }
+        });
+
+        menu.show();
+    }*/
 }
