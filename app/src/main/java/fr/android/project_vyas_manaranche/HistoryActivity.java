@@ -18,6 +18,8 @@ import androidx.core.content.ContextCompat;
 
 import org.w3c.dom.Text;
 
+import java.sql.Timestamp;
+import java.util.Date;
 import java.util.List;
 
 import fr.android.project_vyas_manaranche.models.Fight;
@@ -30,7 +32,6 @@ public class HistoryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        System.out.println("create");
 
         setContentView(R.layout.activity_history);
 
@@ -95,8 +96,6 @@ public class HistoryActivity extends AppCompatActivity {
         fightersNameViewElement.setLayoutParams(layoutParams);
         fightersNameViewElement.setOrientation(LinearLayout.VERTICAL);
 
-        System.out.println("FIGHT : " + fight.getListFighter().size());
-
         fightersNameViewElement.addView(createTextView(fight.getListFighter().get(0).getFullname()));
         fightersNameViewElement.addView(createTextView("vs"));
         fightersNameViewElement.addView(createTextView(fight.getListFighter().get(1).getFullname()));
@@ -130,8 +129,10 @@ public class HistoryActivity extends AppCompatActivity {
 
         fightsInfosViewElement.addView(
                 createTextView(fight.getStreetName() + " - " + fight.getCity()));
+
         fightsInfosViewElement.addView(
-                createTextView(fight.getDate().toString()));
+                createTextView(new Date(fight.getDate()).toString()));
+
         fightsInfosViewElement.addView(createTextView("1500 spectateurs"));
 
         return fightsInfosViewElement;
@@ -159,25 +160,4 @@ public class HistoryActivity extends AppCompatActivity {
     public void handlerBack(View view) {
         finish();
     }
-
-    /*public void handlerMenu(View view) {
-        PopupMenu menu = new PopupMenu(this, view);
-        menu.getMenuInflater().inflate(R.menu.popup_menu, menu.getMenu());
-        menu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-
-            @Override
-            public boolean onMenuItemClick(MenuItem menuItem) {
-                if (menuItem.getItemId() == R.id.item_menu_1)
-                    System.out.println("Hello there");
-                else if (menuItem.getItemId() == R.id.item_menu_2)
-                    System.out.println("Hello there 2");
-                else if (menuItem.getItemId() == R.id.item_menu_3)
-                    System.out.println("Hello there 3");
-
-                return false;
-            }
-        });
-
-        menu.show();
-    }*/
 }

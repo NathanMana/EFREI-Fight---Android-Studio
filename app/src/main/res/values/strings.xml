@@ -3,24 +3,23 @@
     <string name="history">History</string>
     <string name="statistics">Statistics</string>
     <string name="launch">Launch a match</string>
-    <string name="ParamLogo">logo of the settings</string>
-    <string name="enter_name" >Enter the name:</string>
-    <string name="player_1" >Fighter 1 :</string>
-    <string name="player_2" >Fighter 2 :</string>
+    <string name="enter_name" >Enter name</string>
+    <string name="player_1" >Fighter 1</string>
+    <string name="player_2" >Fighter 2</string>
     <string name="ParamText" >Parameter</string>
     <string name="validsetting" >Start fight</string>
     <string name="back">Back</string>
     <string name="menu">Menu</string>
     <string name="spectators">1500 spectators</string>
-    <string name="get_location">Get Location</string>
+    <string name="get_location">Get my location</string>
     <string name="actual_location">Actual Street location</string>
     <string name="actual_location_Country">The Country</string>
     <string name="enter_type_fight">Enter de type of battle</string>
     <string name="FightType">Type of batlle</string>
     <string-array name="FightType">
         <item>Beginner</item>
+        <item>Medium</item>
         <item>Pro</item>
-        <item>Amateur</item>
     </string-array>
     <string name="duration">Duration</string>
     <string name="round_numbers">Numbers of round</string>
@@ -33,4 +32,13 @@
     <string name="CPJ2">Punch on player 2</string>
     <string name="UpperCJ1">Overcute on player 1</string>
     <string name="UpperCJ2">Overcute on player 2</string>
+    <string name="fight">Fight</string>
+    <string name="hook">Hook</string>
+    <string name="overcute">Overcute</string>
+    <string name="direct">Direct</string>
+    <string name="kick">Kick</string>
+    <string name="panel_control">Panel control</string>
+    <string name="name">Name</string>
+    <string name="settings">Settings</string>
+    <string name="next">Next</string>
 </resources>

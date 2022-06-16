@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/EFREI/Semestre_8/Mobile/Project_VYAS_MANARANCHE/app/src/main/res/layout/activity_fight.xml" value="0.33" />
+        <entry key="..\:/EFREI/Semestre_8/Mobile/Project_VYAS_MANARANCHE/app/src/main/res/layout/activity_fight_settings.xml" value="0.33" />
+        <entry key="..\:/EFREI/Semestre_8/Mobile/Project_VYAS_MANARANCHE/app/src/main/res/layout/activity_fight_settings_2.xml" value="0.18" />
         <entry key="..\:/EFREI/Semestre_8/Mobile/Project_VYAS_MANARANCHE/app/src/main/res/layout/activity_history.xml" value="0.25" />
+        <entry key="..\:/EFREI/Semestre_8/Mobile/Project_VYAS_MANARANCHE/app/src/main/res/layout/activity_image.xml" value="0.25" />
         <entry key="..\:/EFREI/Semestre_8/Mobile/Project_VYAS_MANARANCHE/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/EFREI/Semestre_8/Mobile/Project_VYAS_MANARANCHE/app/src/main/res/layout/activity_statistics.xml" value="0.29891304347826086" />
         <entry key="..\:/EFREI/Semestre_8/Mobile/Project_VYAS_MANARANCHE/app/src/main/res/menu/popup_menu.xml" value="0.2265625" />
+        <entry key="..\:/Users/natma/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_dropdown_item.xml" value="0.17" />
       </map>
     </option>
   </component>

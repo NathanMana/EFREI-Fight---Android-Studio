@@ -10,10 +10,11 @@ import java.util.List;
 
 import fr.android.project_vyas_manaranche.models.Fight;
 import fr.android.project_vyas_manaranche.models.Fighter;
+import fr.android.project_vyas_manaranche.models.PlayerRoundStatistics;
 
 public class FighterService {
 
-    public static boolean addFighter(Fighter fighter) {
+    public static int addFighter(Fighter fighter) {
         try {
 
             DatabaseService dbService = new DatabaseService();
@@ -24,13 +25,35 @@ public class FighterService {
             statement.setString(1, fighter.getFullname());
             statement.setInt(2, fighter.getFightId());
 
-            statement.executeUpdate();
+            int affectedRow = statement.executeUpdate();
+            if (affectedRow < 1) return 0;
+
+            ResultSet generatedKeys = statement.getGeneratedKeys();
+            if (!generatedKeys.next()) return 0;
+            int fighterId = generatedKeys.getInt(1);
+
+            dbService.connection.close();
+            return fighterId;
         }
         catch (Exception e) {
             System.out.println("ERREUR : " + e);
         }
 
-        return true;
+        return 0;
+    }
+
+    public static int updateFighter(Fighter fighter) {
+        try {
+
+            for (PlayerRoundStatistics playerRoundStatistics: fighter.getStatistics()) {
+                PlayerRoundStatisticsService.updatePlayerRoundStatistics(playerRoundStatistics);
+            }
+        }
+        catch (Exception e) {
+            System.out.println("ERREUR : " + e);
+        }
+
+        return 0;
     }
 
     public static Fighter GetFighter(int fighterId) {

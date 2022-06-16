@@ -2,10 +2,10 @@ CREATE DATABASE `efrei_fight`;
 
 CREATE TABLE `efrei_fight`.`fight` (
   `fight_id` INT NOT NULL,
-  `date` DATETIME NULL,
+  `date` BIGINT NULL,
   `duration` INT NULL,
-  `streetname` VARCHAR(45) NULL,
-  `city` VARCHAR(45) NULL,
+  `streetname` VARCHAR(80) NULL,
+  `city` VARCHAR(80) NULL,
   PRIMARY KEY (`fight_id`));
   
 ALTER TABLE `efrei_fight`.`fight` 

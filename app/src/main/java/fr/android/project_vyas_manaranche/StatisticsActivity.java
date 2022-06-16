@@ -66,6 +66,8 @@ public class StatisticsActivity extends AppCompatActivity {
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
+                        duration.setText(fight.getDuration() + "");
+                        nbRoundElement.setText(fight.getListFighter().get(0).getStatistics().size() + "");
 
                         statContainer.addView(getRoundViewElement(fight));
                     }
@@ -75,9 +77,6 @@ public class StatisticsActivity extends AppCompatActivity {
     }
 
     private LinearLayout getRoundViewElement(Fight fight) {
-
-        duration.setText(fight.getDuration() + "");
-        nbRoundElement.setText(fight.getListFighter().get(0).getStatistics().size() + "");
 
         LinearLayout roundViewElement = new LinearLayout(this);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
@@ -170,20 +169,7 @@ public class StatisticsActivity extends AppCompatActivity {
                 RelativeLayout.LayoutParams.WRAP_CONTENT,
                 RelativeLayout.LayoutParams.WRAP_CONTENT, 2));*/
 
-        TextView name = new TextView(this);
-        name.setLayoutParams(new LinearLayout.LayoutParams(
-                RelativeLayout.LayoutParams.WRAP_CONTENT,
-                RelativeLayout.LayoutParams.WRAP_CONTENT, 1));
-        name.setText(fullname);
-
         // Ajouter donné
-        TextView givenHits = new TextView(this);
-        givenHits.setLayoutParams(new LinearLayout.LayoutParams(
-                RelativeLayout.LayoutParams.WRAP_CONTENT,
-                RelativeLayout.LayoutParams.WRAP_CONTENT, 1));
-
-        givenHits.setPadding(5,5,5,5);
-        givenHits.setText("Donné");
 
         TextView takenHits = new TextView(this);
         takenHits.setLayoutParams(new LinearLayout.LayoutParams(
@@ -192,6 +178,20 @@ public class StatisticsActivity extends AppCompatActivity {
 
         takenHits.setPadding(5,5,5,5);
         takenHits.setText("Reçu");
+
+        TextView name = new TextView(this);
+        name.setLayoutParams(new LinearLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT, 1));
+        name.setText(fullname);
+
+        TextView givenHits = new TextView(this);
+        givenHits.setLayoutParams(new LinearLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT, 1));
+
+        givenHits.setPadding(5,5,5,5);
+        givenHits.setText("Donné");
 
         //legendLayout.addView(space);
         legendLayout.addView(name);

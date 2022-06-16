@@ -3,10 +3,9 @@
     <string name="history">Historique</string>
     <string name="statistics">Statistiques</string>
     <string name="launch">Lancer un match</string>
-    <string name="ParamLogo">logo of the settings</string>
-    <string name="enter_name" >Entrer le nom:</string>
-    <string name="player_1" >Combattant 1 :</string>
-    <string name="player_2" >Combattant 2 :</string>
+    <string name="enter_name" >Entrez le nom</string>
+    <string name="player_1" >Combattant 1</string>
+    <string name="player_2" >Combattant 2</string>
     <string name="texttypefight">Type de combat :</string>
     <string name="ParamText" >Paramètre</string>
     <string name="validsetting" >Début combat</string>
@@ -15,15 +14,15 @@
     <string name="spectators">1500 spectateurs</string>
     <string name="duration">Durée</string>
     <string name="round_numbers">Nombre de round</string>
-    <string name="get_location">La localisation</string>
+    <string name="get_location">Récupérer position</string>
     <string name="actual_location">Adresse actuelle</string>
     <string name="actual_location_Country">Le pays</string>
     <string name="enter_type_fight">Entrer le type de combat</string>
     <string name="FightType">Type de combat</string>
     <string-array name="FightType">
         <item>Débutant</item>
+        <item>Intermédiaire</item>
         <item>Pro</item>
-        <item>Amateur</item>
     </string-array>
     <string name="Healtbarview1">100</string>
     <string name="Healtbarview2">100</string>
@@ -33,5 +32,13 @@
     <string name="CPJ2">Coup de poing sur Joueur 2</string>
     <string name="UpperCJ1">Uppercute sur Joueur 1</string>
     <string name="UpperCJ2">Uppercute sur Joueur 2</string>
-
+    <string name="fight">Combat</string>
+    <string name="hook">Crochet</string>
+    <string name="overcute">Uppercute</string>
+    <string name="direct">Direct</string>
+    <string name="kick">Coup de pied</string>
+    <string name="panel_control">Panneau de contrôle</string>
+    <string name="name">Nom</string>
+    <string name="settings">Paramètres</string>
+    <string name="next">Suivant</string>
 </resources>

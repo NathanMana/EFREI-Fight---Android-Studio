@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
      */
     public void launchMatch(View view) {
 
-        // Intent intent = new Intent(this, Settings.class);
-        // startActivity(intent);
+        Intent intent = new Intent(this, FightSettings.class);
+        startActivity(intent);
     }
 
     /**

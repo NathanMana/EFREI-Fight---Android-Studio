@@ -8,7 +8,7 @@ import java.util.List;
 public class Fight {
 
     private int fightId;
-    private Date date;
+    private long date;
     private int duration;
     private String streetName;
     private String city;
@@ -16,8 +16,15 @@ public class Fight {
     private List<Fighter> listFighter;
     private List<Round> listRounds;
 
+    public Fight(long date, String streetName, String city) {
+        this.date = date;
+        this.streetName = streetName;
+        this.city = city;
+        this.duration = 0;
+    }
+
     public Fight(int fightId,
-                 Date date,
+                 long date,
                  int duration,
                  String streetName,
                  String city,
@@ -31,7 +38,7 @@ public class Fight {
         this.listFighter = listFighters;
         this.listRounds = listRounds;
     }
-    public Fight(Date date,
+    public Fight(long date,
                  String streetName,
                  String city,
                  List<Fighter> listFighters) {
@@ -65,11 +72,11 @@ public class Fight {
         this.fightId = fightId;
     }
 
-    public Date getDate() {
+    public long getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(long date) {
         this.date = date;
     }
 
