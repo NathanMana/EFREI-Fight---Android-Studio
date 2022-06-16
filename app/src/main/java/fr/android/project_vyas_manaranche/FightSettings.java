@@ -146,13 +146,13 @@ public class FightSettings extends AppCompatActivity implements AdapterView.OnIt
                 // Vérification du formulaire rempli
                 if (TextUtils.isEmpty(player1.getText().toString())){
                     //Toast pour indiquer il faut remplir quoi
-                    Toast.makeText(FightSettings.this, "Fill the gap (Player 1)",
+                    Toast.makeText(FightSettings.this, R.string.fill_gap,
                             Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (TextUtils.isEmpty(player2.getText().toString())){
                     //Toast pour indiquer il faut remplir quoi
-                    Toast.makeText(FightSettings.this, "Fill the gap (Player 2)",
+                    Toast.makeText(FightSettings.this, R.string.fill_gap,
                             Toast.LENGTH_SHORT).show();
                     return;
                 }

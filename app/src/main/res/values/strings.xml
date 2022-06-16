@@ -41,4 +41,8 @@
     <string name="name">Name</string>
     <string name="settings">Settings</string>
     <string name="next">Next</string>
+    <string name="going_next_round">Going to next round !</string>
+    <string name="fill_gap">Fill all inputs</string>
+    <string name="given">Given</string>
+    <string name="taken">Taken</string>
 </resources>

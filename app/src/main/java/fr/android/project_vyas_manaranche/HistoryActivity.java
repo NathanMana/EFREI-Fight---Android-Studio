@@ -133,7 +133,7 @@ public class HistoryActivity extends AppCompatActivity {
         fightsInfosViewElement.addView(
                 createTextView(new Date(fight.getDate()).toString()));
 
-        fightsInfosViewElement.addView(createTextView("1500 spectateurs"));
+        fightsInfosViewElement.addView(createTextView(getResources().getString(R.string.spectators)));
 
         return fightsInfosViewElement;
     }

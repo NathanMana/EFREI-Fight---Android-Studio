@@ -105,26 +105,26 @@ public class StatisticsActivity extends AppCompatActivity {
 
                 // Ajouter data pour ce joueur et ce round
                 List<String> listHookData = new LinkedList<String>();
-                listHookData.add("Crochet");
+                listHookData.add(getResources().getString(R.string.hook));
                 listHookData.add(fighter.getStatistics().get(i).getNbHook() + "");
                 listHookData.add(enemyFighter.getStatistics().get(i).getNbHook() + "");
 
                 List<String> listOvercute = new LinkedList<String>();
-                listOvercute.add("Uppercute");
+                listOvercute.add(getResources().getString(R.string.overcute));
                 listOvercute.add(fighter.getStatistics().get(i).getNbOvercute() + "");
                 listOvercute.add(enemyFighter.getStatistics().get(i).getNbOvercute() + "");
 
                 roundViewElement.addView(getContentStatsViewElement(listOvercute));
 
                 List<String> listDirect = new LinkedList<String>();
-                listDirect.add("Direct");
+                listDirect.add(getResources().getString(R.string.direct));
                 listDirect.add(fighter.getStatistics().get(i).getNbDirect() + "");
                 listDirect.add(enemyFighter.getStatistics().get(i).getNbDirect() + "");
 
                 roundViewElement.addView(getContentStatsViewElement(listDirect));
 
                 List<String> listKick = new LinkedList<String>();
-                listKick.add("Kick");
+                listKick.add(getResources().getString(R.string.kick));
                 listKick.add(fighter.getStatistics().get(i).getNbKick() + "");
                 listKick.add(enemyFighter.getStatistics().get(i).getNbKick() + "");
 
@@ -177,7 +177,7 @@ public class StatisticsActivity extends AppCompatActivity {
                 RelativeLayout.LayoutParams.WRAP_CONTENT, 1));
 
         takenHits.setPadding(5,5,5,5);
-        takenHits.setText("Reçu");
+        takenHits.setText(getResources().getString(R.string.taken));
 
         TextView name = new TextView(this);
         name.setLayoutParams(new LinearLayout.LayoutParams(
@@ -191,7 +191,7 @@ public class StatisticsActivity extends AppCompatActivity {
                 RelativeLayout.LayoutParams.WRAP_CONTENT, 1));
 
         givenHits.setPadding(5,5,5,5);
-        givenHits.setText("Donné");
+        givenHits.setText(getResources().getString(R.string.given));
 
         //legendLayout.addView(space);
         legendLayout.addView(name);

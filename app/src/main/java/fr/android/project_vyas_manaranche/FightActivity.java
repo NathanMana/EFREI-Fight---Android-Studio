@@ -211,7 +211,7 @@ public class FightActivity extends AppCompatActivity {
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(FightActivity.this, "Passage au round suivant !",
+                        Toast.makeText(FightActivity.this, R.string.going_next_round,
                                 Toast.LENGTH_SHORT).show();
                     }
                 });

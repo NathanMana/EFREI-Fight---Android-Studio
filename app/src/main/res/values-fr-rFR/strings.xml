@@ -41,4 +41,8 @@
     <string name="name">Nom</string>
     <string name="settings">Paramètres</string>
     <string name="next">Suivant</string>
+    <string name="going_next_round">Passage au round suivant !</string>
+    <string name="fill_gap">Remplissez tous les champs</string>
+    <string name="given">Donné</string>
+    <string name="taken">Reçu</string>
 </resources>
